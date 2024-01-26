@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+version="2.4" id="WebApp_ID">
+	<servlet>
+		
+		<servlet-name>Home</servlet-name>
+		<servlet-class>app.bookstore.controller.Home</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>showbook</display-name>
+		<servlet-name>Sbook</servlet-name>
+		<servlet-class>app.bookstore.controller.Sbook</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		
+		<servlet-name>Dbook</servlet-name>
+		<servlet-class>app.bookstore.controller.Dbook</servlet-class>
+	</servlet>
+	
+	<servlet>
+	<servlet-name>Ebookname</servlet-name>
+		<servlet-class>app.bookstore.controller.Ebookname</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<description>
+		</description>
+		<display-name>Dbookname</display-name>
+		<servlet-name>Dbookname</servlet-name>
+		<servlet-class>app.bookstore.controller.Dbookname</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Ebookedition</display-name>
+		<servlet-name>Ebookedition</servlet-name>
+		<servlet-class>app.bookstore.controller.Ebookedition</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Dbookedition</display-name>
+		<servlet-name>Dbookedition</servlet-name>
+		<servlet-class>app.bookstore.controller.Dbookedition</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>Ebookprice</display-name>
+		<servlet-name>Ebookprice</servlet-name>
+		<servlet-class>app.bookstore.controller.Ebookprice</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		
+		<servlet-name>Dbookprice</servlet-name>
+		<servlet-class>app.bookstore.controller.Dbookprice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Home</servlet-name>
+		<url-pattern>/Home</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Sbook</servlet-name>
+		<url-pattern>/Sbook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Dbook</servlet-name>
+		<url-pattern>/Dbook</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Ebookname</servlet-name>
+		<url-pattern>/Ebookname</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>Dbookname</servlet-name>
+		<url-pattern>/Dbookname</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Ebookedition</servlet-name>
+		<url-pattern>/Ebookedition</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Dbookedition</servlet-name>
+		<url-pattern>/Dbookedition</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Ebookprice</servlet-name>
+		<url-pattern>/Ebookprice</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Dbookprice</servlet-name>
+		<url-pattern>/Dbookprice</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+	<display-name>BookManagmentSystem</display-name>
+</web-app>
